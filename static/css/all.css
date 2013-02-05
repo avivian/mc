@@ -1,0 +1,21 @@
+@import "jquery-ui-1.8.24.custom.css";
+
+ul.vid-playlist{
+	border: 1px solid black;
+	height: 200px;
+	width: 400px;
+	padding: 5px;
+	overflow: auto;
+}
+
+li.video-item{
+	padding: 5px;
+	margin: 5px;
+	background: #ddd;
+	list-style: none;
+}
+li.video-item:nth-child(odd){
+	background: #039;
+	color: #fff;
+}
+

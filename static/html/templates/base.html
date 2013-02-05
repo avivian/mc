@@ -1,0 +1,37 @@
+<script data-id="base" type="text/x-handlebars-template">
+	<h1>Arthur Media Centre</h1>
+	<div class="video-list"> </div>
+	<div class="playback"> </div>
+
+</script>
+
+<script data-id="vid_list" type="text/x-handlebars-template">
+	<ul class="vid-playlist">
+		{{#each videos}}
+		<li class="video-item" data-id="{{_id}}">{{name}}</li>
+		{{/each}}
+	</ul>
+</script>
+
+<script data-id="playback_buttons" type="text/x-handlebars-template">
+	<div class="buttons">
+		<img class="stop" src="/static/img/stop.jpg" />
+		<img class="back" src="/static/img/back.jpg" />
+		<img class="play" src="/static/img/play.jpg" />
+		<img class="pause" src="/static/img/pause.jpg" />
+		<img class="fwd" src="/static/img/fwd.jpg" />		
+		<div class="exit">
+			<button class="exit" type="button">Exit</button>
+		</div>
+		<div class="launch">
+			<button class="launch" type="button">Launch</button>
+		</div>
+		<div class="fullscreen">
+			<button class="fullscreen" type="button">Fullscreen</button>
+		</div>
+		<div class="snapshot">
+			<button class="snapshot" type="button">Snapshot</button>
+		</div>
+	</div>
+	<div id="slider"> </div>
+</script>
